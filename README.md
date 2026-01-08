@@ -67,3 +67,18 @@ updated sales prices.
 quantities and payment details.
 This fragmentation hinders efficient reporting, decision-
 making, and the identification of growth opportunities.
+## 2.2 Data Modelling 
+The data model shows a classic star schema, with the Order_Fact table at the centre capturing transactional data such as Order ID, Date, Expenses and Product. This fact table is linked via one-to-many relationships to the Customers_Dim table (containing customer attributes such as name, location and contact details) and the Product_Dim table (holding product types and unit-level production and selling costs). A dedicated Measures table is used to store calculated metrics, improving model clarity, reusability, and performance. This structure enables consistent filtering across visuals and underpins the slicers used in both dashboards.
+
+<img width="1495" height="630" alt="Screenshot 2026-01-08 143222" src="https://github.com/user-attachments/assets/00ba973d-18c6-4384-9af6-b2ce9d7caa80" />
+
+# 3. Dashboard Reporting
+## 3.1 Product Performance Analysis
+The Product Analysis dashboard shifts focus to product performance while maintaining consistency in design and metrics. KPI cards summarise Total Profit (£3M), Total Orders (700), Total Expenses (£1.97M) and Number of Products (6), alongside order contribution metrics. A combined area and line chart tracks monthly total profit and quantity sold, revealing seasonal patterns and peak performance periods. Product-level bar charts compare expenses versus profit by product, highlighting cost efficiency and margin differences between cookie types. Additional visuals show quantity sold by product and rank products by total volume, making it easy to identify best-selling and underperforming items. A Name slicer allows users to filter the dashboard by customer, ensuring seamless cross-analysis between customer and product perspectives.
+
+<img width="1159" height="675" alt="Screenshot 2026-01-08 143517" src="https://github.com/user-attachments/assets/52387994-770f-4a32-ae08-4f89bacc2594" />
+
+## 3.2 Customer performance Analysis
+The Customer Analysis dashboard focuses on customer-level performance. KPI cards at the top summarise headline metrics, including Total Profit (£3M), Total Orders (700), Total Customers (5) and Total Expenses (£1.97M). Gauge visuals provide immediate context by comparing Customer Profit against a target and showing Total Quantity Sold (1,125,824 units) against an upper benchmark. A geographical map visual displays customer profit by state, highlighting regional concentration and performance differences across the United States. Below, bar charts break down total expenses versus profit by customer, clearly illustrating margin performance for each customer, while additional visuals show quantity sold by customer name and number of orders per customer, allowing easy identification of high-volume and high-frequency buyers. A Product slicer enables users to dynamically filter all visuals to analyse customer behaviour for specific products.
+
+<img width="1149" height="676" alt="Screenshot 2026-01-08 143448" src="https://github.com/user-attachments/assets/1e82bfac-afea-4072-ac85-dc9e82183a9b" />
