@@ -21,7 +21,7 @@ strategic planning and growth initiatives.
 • Orders table – A fact table that contains all the business transactions for 16 months(Sept 2019 – Dec 2020)
 • Customers table – A dimension table that contains all thepersonal information of the retailers
 • Cookies table – A dimension table that contains the production and selling cost of each product
-Order Table
+##### Order Table
 • Customer ID: A unique identifier that
 links each order to a specific customer
 • Order ID: A unique identifier assigned
@@ -33,7 +33,7 @@ cookie product sold in the specific
 order.
 • Date: The date when the order was
 placed.
-Product Table
+#### Product Table
 • Product: The type or name of the
 cookie (e.g., Chocolate Chip, Fortune
 Cookie).
@@ -44,7 +44,7 @@ customers
 incurred by the company to produce a
 single cookie, including ingredients
 and labor.
-Customer Table
+### Customer Table
 • Customer ID: A unique identifier for each customer
 • Name: The full name of the customer who placed the order.
 • Phone: The contact number provided by the customer
