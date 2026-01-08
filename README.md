@@ -56,41 +56,14 @@ delivered.
 • Country: The country where the customer resides.
 • Notes: Any additional information or comments about the customer, such as
 preferences or special requests.
-
-##### Order Table
-• Customer ID: A unique identifier that
-links each order to a specific customer
-• Order ID: A unique identifier assigned
-to every order placed
-• Product: The name or type of cookie
-purchased in the order
-• Units Sold: The quantity of a particular
-cookie product sold in the specific
-order.
-• Date: The date when the order was
-placed.
-
-##### Product Table
-• Product: The type or name of the
-cookie (e.g., Chocolate Chip, Fortune
-Cookie).
-• Selling Cost Per Cookie: The retail
-price at which a single cookie is sold to
-customers
-• Production Cost Per Cookie: The cost
-incurred by the company to produce a
-single cookie, including ingredients
-and labor.
-
-##### Customer Table
-• Customer ID: A unique identifier for each customer
-• Name: The full name of the customer who placed the order.
-• Phone: The contact number provided by the customer
-• Address: The street address where the customer resides or where the order may be
-delivered.
-• City: The city where the customer is located.
-• State: The state of residence for the customer.
-• Zip: The postal or ZIP code for the customer's address
-• Country: The country where the customer resides.
-• Notes: Any additional information or comments about the customer, such as
-preferences or special requests.
+# 2. Analysis
+## 2.1 Problem Statement
+Dreamy Bites faces a challenge in consolidating its data,
+which is currently scattered across multiple sources:
+• A PDF file containing product descriptions and their
+updated sales prices.
+• A CSV file storing customer information
+• A Google Sheet that tracks orders, including
+quantities and payment details.
+This fragmentation hinders efficient reporting, decision-
+making, and the identification of growth opportunities.
